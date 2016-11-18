@@ -1,0 +1,130 @@
+html, body{
+    font-family: 'Lora', serif;
+    height: 100%; 
+    width: 100%; 
+    margin: 0;
+}
+
+.container{
+    height:100%;
+}
+
+.main{
+    margin: 0 auto;
+    border: solid 2px black;
+    height: 80%;
+    width: 90%;
+    position:relative
+}
+
+/*      TEXT        */
+
+h1{
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.links{
+    text-align: center;
+    display: block;
+}
+
+#email{
+    color: #000;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.tiny{
+    color: #333;
+    font-size: .7em;
+    text-align: right;
+    text-align: right;
+    margin-right: 5%;
+    margin-right: 5%;
+}
+
+/*   DISPLAY CASE ARROWS   */
+
+.arrow{
+    padding: 350px 0;
+}
+
+#left{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+    padding-right: 100px;
+}
+
+#right{
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%);
+    padding-left: 100px;
+}
+
+/* DISPLAY CASE IMAGES */
+
+.display-case{
+    display: inline;
+}
+
+.mySlides{
+    margin: 0 auto;
+    height: inherit;
+    max-height: 1400px;
+    width: auto;
+    margin-top: 8vh;
+}
+
+/* IPAD PORTRAIT */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+    .main{
+        height: 85%;
+    }
+}
+
+/* IPHONE 6 LANDSCAPE */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+    and (orientation : landscape) {
+    .main{
+        height: 65%;  
+    }
+}
+
+/* IPHONE 6 PLUS LANDSCAPE */
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+    .main{
+        height: 70%;  
+    }
+}
+
+/* IPHONE 5 AND 5S LANDSCAPE */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+   .main{
+        height: 65%;  
+    }
+}
+
+@media only screen and (min-width: 600px){
+    h1{
+        margin-top: 15px;
+    }
+}
