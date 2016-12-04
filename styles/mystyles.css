@@ -25,9 +25,9 @@ html, body{
     margin: 0 auto;
     margin-top: -30px;
 /*    border: solid 2px black;*/
-    height: 90%;
+    height: 80%;
     width: 90%;
-    position:relative;
+/*    position:relative;*/
 }
 
 .about{
@@ -143,5 +143,9 @@ html, body{
     
     .header-left, .header-right{
         font-size: 2em;
+    }
+    
+    .main{
+        height: 90%;
     }
 }
