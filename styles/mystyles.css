@@ -39,7 +39,7 @@ html, body{
 
 .header-left, .header-right{
     display: inline;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0 5px;
 }
 
@@ -139,4 +139,8 @@ html, body{
     .header-right{
         padding-right: 2em;
     } 
+    
+    .header-left, .header-right{
+        font-size: 1.5em;
+    }
 }
