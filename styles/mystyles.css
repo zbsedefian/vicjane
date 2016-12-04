@@ -1,3 +1,5 @@
+/*  GENERAL */
+
 html, body{
     font-family: 'Lora', serif;
     height: 100%; 
@@ -5,50 +7,88 @@ html, body{
     margin: 0;
 }
 
+.clearfix:before, .clearfix:after{ 
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
 .container{
     height:100%;
 }
 
 .main{
     margin: 0 auto;
-    border: solid 2px black;
-    height: 80%;
+    margin-top: -30px;
+/*    border: solid 2px black;*/
+    height: 90%;
     width: 90%;
-    position:relative
+    position:relative;
+}
+
+.about{
+    margin: 0 2em;
 }
 
 /*      TEXT        */
 
-h1{
-    margin-top: 0;
-    text-align: center;
-    margin-bottom: 10px;
+
+.header-left, .header-right{
+    display: inline;
+    font-size: 1.5em;
+    margin: 0 5px;
 }
 
-.links{
-    text-align: center;
-    display: block;
+.header-right, .header-right:visited{
+    margin-top: 3px;
+    float: right;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: grey;
+}
+
+.header-right:hover{
+    color: darkgray;
 }
 
 #email{
     color: #000;
-    margin-bottom: 10px;
     text-decoration: none;
+    margin-bottom: 5px;
+}
+
+#email:hover{
+    color: blue;
+}
+
+#email:visited{
+    color: purple;
 }
 
 .tiny{
     color: #333;
     font-size: .7em;
     text-align: right;
-    text-align: right;
     margin-right: 5%;
-    margin-right: 5%;
+    margin-top: -40px;
 }
+
+/*   NAV BAR   */
+
+.the-top{
+    margin-top: 25px;
+}
+
 
 /*   DISPLAY CASE ARROWS   */
 
 .arrow{
-    padding: 350px 0;
+    padding: 100px 0;
+    margin-top: -50px;
 }
 
 #left{
@@ -57,7 +97,7 @@ h1{
     left:0%;
     transform:translate(0%,-50%);
     -ms-transform:translate(-0%,-50%);
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 #right{
@@ -66,7 +106,7 @@ h1{
     right:0%;
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 /* DISPLAY CASE IMAGES */
@@ -83,48 +123,20 @@ h1{
     margin-top: 8vh;
 }
 
-/* IPAD PORTRAIT */
+/* PHONE + TABLET LANDSCAPE */
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) and (orientation : landscape) {
     .main{
-        height: 85%;
-    }
-}
-
-/* IPHONE 6 LANDSCAPE */
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-    and (orientation : landscape) {
-    .main{
-        height: 65%;  
-    }
-}
-
-/* IPHONE 6 PLUS LANDSCAPE */
-
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
-and (orientation : landscape) { 
-    .main{
-        height: 70%;  
-    }
-}
-
-/* IPHONE 5 AND 5S LANDSCAPE */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : landscape) { 
-   .main{
-        height: 65%;  
+        height: 90%;  
     }
 }
 
 @media only screen and (min-width: 600px){
-    h1{
-        margin-top: 15px;
+    .header-left{
+        margin-left: 1em;
     }
+    
+    .header-right{
+        padding-right: 2em;
+    } 
 }
