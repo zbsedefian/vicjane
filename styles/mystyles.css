@@ -47,7 +47,6 @@ html, body{
     margin-top: 3px;
     float: right;
     text-decoration: none;
-    font-size: 1.25em;
     color: grey;
 }
 
@@ -75,6 +74,8 @@ html, body{
     text-align: right;
     margin-right: 5%;
     margin-top: -40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /*   NAV BAR   */
@@ -141,6 +142,6 @@ html, body{
     } 
     
     .header-left, .header-right{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
