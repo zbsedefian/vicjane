@@ -138,7 +138,7 @@ html, body{
     }
     
     .header-right{
-        padding-right: 2em;
+        margin-right: 1em;
     } 
     
     .header-left, .header-right{
