@@ -15,3 +15,15 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block"; 
 }
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+        case 37:
+            plusDivs(-1);
+            break;
+        case 39:
+            plusDivs(1);
+            break;
+    }
+};
